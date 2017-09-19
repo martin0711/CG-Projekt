@@ -98,7 +98,7 @@ public class PlayerMove : MonoBehaviour {
                 15.0f * Time.deltaTime);
             player_Move = transform.forward * moveSpeed * Time.deltaTime;
 
-            if (Vector3.Distance(transform.position, target_Pos) <= 0.5f)
+            if (Vector3.Distance(transform.position, target_Pos) <= 0.1f)
             {
                 canMove = false;
             }
@@ -107,6 +107,31 @@ public class PlayerMove : MonoBehaviour {
         {
             player_Move.Set(0f, 0f, 0f);
             anim.SetFloat("Walk", 0.0f);
+        }
+    }
+
+    public bool FinishedMOvement
+    {
+        get
+        {
+            return finished_Movement;
+        }
+        set
+        {
+            finished_Movement = value;
+        }
+    }
+
+    public Vector3 TargetPosition
+    {
+        get
+        {
+            return target_Pos;
+        }
+
+        set
+        {
+            target_Pos = value;
         }
     }
 }
