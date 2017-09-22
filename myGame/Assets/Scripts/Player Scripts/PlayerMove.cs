@@ -79,7 +79,7 @@ public class PlayerMove : MonoBehaviour {
                 {
                     player_ToPointDistance = Vector3.Distance(transform.position, hit.point);
 
-                    if(player_ToPointDistance >= 1.0f)
+                    if(player_ToPointDistance >= 1f)
                     {
                         canMove = true;
                         target_Pos = hit.point;
@@ -98,7 +98,7 @@ public class PlayerMove : MonoBehaviour {
                 15.0f * Time.deltaTime);
             player_Move = transform.forward * moveSpeed * Time.deltaTime;
 
-            if (Vector3.Distance(transform.position, target_Pos) <= 0.1f)
+            if (Vector3.Distance(transform.position, target_Pos) <= 0.5f)
             {
                 canMove = false;
             }

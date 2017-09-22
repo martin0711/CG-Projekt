@@ -36,6 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4511455240583942}
   - component: {fileID: 114924306727894458}
+  - component: {fileID: 114313249846765038}
   m_Layer: 0
   m_Name: FireShield
   m_TagString: Untagged
@@ -151,6 +152,17 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114313249846765038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1351438999312512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f4e652fa7c52f4b81b62b01c7340f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114924306727894458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a62653fa7c43d1647827171351b1e52a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 2.5
+  timer: 3
 --- !u!198 &198679346102248284
 ParticleSystem:
   m_ObjectHideFlags: 1
